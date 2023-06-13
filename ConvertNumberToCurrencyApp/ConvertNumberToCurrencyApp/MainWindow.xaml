@@ -1,0 +1,18 @@
+﻿<Window x:Class="ConvertNumberToCurrencyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
+        xmlns:local="clr-namespace:ConvertNumberToCurrencyApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="TextBoxInt" GotFocus="TextBox_GotFocus" HorizontalAlignment="Left" Margin="283,106,0,0" TextWrapping="Wrap" Text="Dollars" VerticalAlignment="Top" Width="129" Height="31"/>
+        <TextBox Name="TextBoxDouble" GotFocus="TextBox_GotFocus" HorizontalAlignment="Left" Margin="425,106,0,0" TextWrapping="Wrap" Text="Cents" VerticalAlignment="Top" Width="129" Height="31"/>
+        <TextBlock HorizontalAlignment="Left" Margin="123,113,0,0" TextWrapping="Wrap" Text="Enter your number here:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="417,118,0,0" TextWrapping="Wrap" Text="," VerticalAlignment="Top"/>
+        <Button Content="Convert to dollars" HorizontalAlignment="Left" Margin="283,197,0,0" VerticalAlignment="Top" Width="162" Click="Button_Click"/>
+
+    </Grid>
+</Window>
